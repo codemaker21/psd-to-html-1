@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Psd to HTML 1</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700|Playfair+Display" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="head-contain">
+		<header>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<img class="burguer" id="burger" src="img/burguer.png" alt="">
+				<i class="fa fa-search search"></i>
+				<div class="side-nav" id="side-menu">
+					<a href="#" id="close">&times;</a>
+					<a href="#">Home</a>
+					<a href="#">About</a>
+					<a href="#">Contact</a>
+				</div>
+			</nav>
+			<hr>
+		</header>
+
+		<div class="text-contain">
+			<h1>Web Design</h1>
+			<div class="p-contain">
+				<p>Fusce dapibus, tellus ac cursus commodo, tortor mauris  condimentum, ut fermentum massa justo sit amet erat a ante venenatis dapibus posuere velit.</p>
+			</div>
+			<a href="#" class="btn pill">REALLY?</a>
+		</div>
+	</div>
+
+	<div class="main-gallery">
+		<div class="image img1 opacity">
+			<div class="text">
+				<h3>amet condimentum</h3>
+				<p>Dolor</p>
+			</div>
+		</div>
+		<div class="image img2 opacity">
+			<div class="text">
+				<h3>lorem cursus</h3>
+				<p>Ligula</p>
+			</div>
+		</div>
+		<div class="image img3 opacity">
+			<div class="text">
+				<h3>condimentum ultricies</h3>
+				<p>Consectetur</p>
+			</div>
+		</div>
+		<div class="image img4 opacity">
+			<div class="text">
+				<h3>ridiculus ornare</h3>
+				<p>Ullamcorper</p>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="section">
+				<h4>follow us</h4>
+				<ul>
+					<li>Twitter</li>
+					<li>Facebook</li>
+					<li>Linkedin</li>
+					<li>Pinterest</li>
+					<li>YouTube</li>
+				</ul>
+			</div>
+			<div class="section">
+				<h4>get to know us</h4>
+				<ul>
+					<li>About</li>
+					<li>Policies</li>
+					<li>Carrers</li>
+					<li>Press</li>
+					<li>Developers</li>
+				</ul>
+			</div>
+			<div class="section">
+				<h4>locations</h4>
+				<ul>
+					<li>Detroit</li>
+					<li>London</li>
+					<li>Florida</li>
+					<li>Las Vegas</li>
+					<li>California</li>
+				</ul>
+			</div>
+			<div class="section">
+				<h4>our mission</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel debitis dolorum fuga laborum repellat tenetur. Rem iste natus totam saepe, cupiditate qui eos ullam, explicabo doloremque.</p>
+			</div>
+		</div>
+		<div class="footer-line">
+			<p>Copyright &copy; 2016 @samiralley</p>
+		</div>
+	</footer>
+	
+
+	<script>
+		var burger = document.getElementById('burger');
+		var x = document.getElementById('close');
+
+		function openSlideMenu(){
+			document.getElementById('side-menu').style.width= '250px';
+		}
+
+		function closeSlideMenu(){
+			document.getElementById('side-menu').style.width= '0';
+		}
+
+		burger.addEventListener("click", openSlideMenu);
+		x.addEventListener("click", closeSlideMenu);
+	</script>
+
+
+</body>
+</html>
